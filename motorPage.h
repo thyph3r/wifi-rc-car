@@ -9,30 +9,33 @@ R"(
   </head>
   <body>
     <div class="container-fluid">
-      <div class="col-xs-12"  style="height: 100vh">
+      <div class="col-xs-12"  style="height: 90vh">
         <div class="row" style="height: 33.33%; padding-top: 1em; padding-bottom:1em">
-          <div class="col-xs-8" ></div>
+          <div class="col-xs-4" ></div>
           <div class="col-xs-4" style="text-align: center; height: 100%">
-            <button id="drive" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("forward")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("forward")' ontouchend='makeAjaxCall("driveStop")'>Drive</button>
-          </div>
-        </div>
-        <div class="row" style="height: 33.33%; padding-bottom:1em">
-          <div class="col-xs-4" style="height: 100%; text-align: center">
-            <button id="left" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("left")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("left")' ontouchend='makeAjaxCall("steerStop")'>Left</button>
-          </div>
-          <div class="col-xs-4" style="height: 100%; text-align: center">
-            <button id="right" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("right")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("right")' ontouchend='makeAjaxCall("steerStop")'>Right</button>
+            <button id="drive" type="button" class="btn btn-default btn-success btn btn-primary btn-lg" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("forward")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("forward")' ontouchend='makeAjaxCall("driveStop")'>Drive</button>
           </div>
           <div class="col-xs-4" ></div>
         </div>
         <div class="row" style="height: 33.33%; padding-bottom:1em">
-          <div class="col-xs-8" ></div>
           <div class="col-xs-4" style="height: 100%; text-align: center">
-            <button id="back" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("back")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("back")' ontouchend='makeAjaxCall("driveStop")'>Back</button>
+            <button id="left" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("left")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("left")' ontouchend='makeAjaxCall("steerStop")'><-- Left</button>
           </div>
+		  <div class="col-xs-4" ></div>
+          <div class="col-xs-4" style="height: 100%; text-align: center">
+            <button id="right" type="button" class="btn btn-default" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("right")' onmouseup='makeAjaxCall("steerStop")' ontouchstart='makeAjaxCall("right")' ontouchend='makeAjaxCall("steerStop")'>Right --></button>
+          </div>
+          <div class="col-xs-4" ></div>
         </div>
+        <div class="row" style="height: 33.33%; padding-bottom:1em">
+          <div class="col-xs-4" ></div>
+          <div class="col-xs-4" style="height: 100%; text-align: center">
+            <button id="back" type="button" class="btn btn-default btn-danger btn btn-primary btn-lg" style="height: 100%; width: 100%" onmousedown='makeAjaxCall("back")' onmouseup='makeAjaxCall("driveStop")' ontouchstart='makeAjaxCall("back")' ontouchend='makeAjaxCall("driveStop")'>Back</button>
+          </div>
+          <div class="col-xs-4" ></div>
+		</div>
       </div>
-    </div>
+	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script> function makeAjaxCall(url){$.ajax({"url": url})}</script>
