@@ -1,6 +1,6 @@
 /*******************************************************************
-    A sketch for controlling a toy car with using a web page 
-    hosted on a ESP8266
+    A sketch for controlling a rc car via a web page  
+    hosted on a ESP8266 using ajax calls
     
     Main Hardware:
     - NodeMCU Development Board cp2102 (Look for the one with the square chip beside the USB port)
