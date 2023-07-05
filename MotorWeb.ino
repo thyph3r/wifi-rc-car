@@ -5,9 +5,7 @@
     Main Hardware:
     - NodeMCU Development Board cp2102 (Look for the one with the square chip beside the USB port)
     - NodeMCU Motor Shield (L2932)
-    
-    Written by Brian Lough
-    https://www.youtube.com/channel/UCezJOfu7OtqGzd5xrP3q6WA
+
  *******************************************************************/
 
 #include <ESP8266WiFi.h>
