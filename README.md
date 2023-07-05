@@ -1,5 +1,5 @@
-# wifi-rc-car
-A project using NodeMCU motor shield to convert a RC car to have WiFi controls. One really simple way of adding WiFi controls to any rc car. Built using an ESP8266 and is controlled using a webpage hosted on the ESP8266 board.
+# wifi_rc_car
+A project using NodeMCU ESP8266 & NodeMCU motor shield to convert a RC car to have WiFi controls. One really simple way of adding WiFi controls to any rc car. Built using an ESP8266 and is controlled using a webpage hosted on the ESP8266 board.
 
 *******************************
 Note: Replace **SSID** and **Password** in file MotorWeb.ino
